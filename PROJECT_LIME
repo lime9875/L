@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيرتي الذاتية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ENG.AM & ENG.HM</h1>
+        <p>مطورين ويب | مصممين جرافيك</p>
+    </header>
+
+    <section id="about">
+        <h2>عنّي</h2>
+        <p>نحن مصممين مواقع ويب و  وكنا نعمل ايضا في مجال الجرافيك
+          وايضا انشأنا تطبيقات متعدده .</p>
+    </section>
+
+    <section id="projects">
+        <h2>المشاريع</h2>
+        <ul>
+            <li>
+                <h3>صممناموقع تسويق انا و صديقي المهندس حمدي  </h3>
+                <p>لقد صممنا موقع انا و  صديقي المهندس حمدي موقع خاص بتسويق المنتجات .</p>
+                <a href="رابط المشروع" target="_blank">عرض المشروع</a>
+            </li>
+            <li>
+                <h3>صممت مع صديقي المهندس حمدي تطبيق عن الحضاره المصريه القديمه</h3>
+                <p>تطبيق خاص بالحضارات</p>
+            </li>
+            <li>
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>تواصل معي: بريدك الإلكتروني أو روابط التواصل الاجتماعي.</p>
+    </footer>
+</body>
+</html>
+
