@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة استقبال البريد الإلكتروني</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>اشترك في نشرتنا الإخبارية</h1>
+        <form id="emailForm">
+            <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+            <button type="submit">اشتراك</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+document.getElementById('emailForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message');
+
+    // هنا يمكنك إضافة كود لإرسال البريد الإلكتروني إلى السيرفر
+    // سنستخدم محاكاة فقط في هذا المثال
+    message.textContent = `تم اشتراكك بنجاح باستخدام البريد: ${email}`;
+    message.style.color = 'green';
+    
+    // إعادة تعيين حقل البريد الإلكتروني
+    document.getElementById('email').value = '';
+});
